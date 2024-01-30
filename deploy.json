@@ -1,0 +1,4 @@
+{
+    "folder": ".\\LocalAccounts",
+    "policies": "TrustFrameworkBase.xml,TrustFrameworkLocalization.xml,TrustFrameworkExtensions.xml,SignUpOrSignin.xml,ProfileEdit.xml,PasswordReset.xml"
+}
