@@ -25,8 +25,8 @@ Guide for B2C Deep Learning Campus (Day 2) lab guide.
 1. Download this repo as `.zip`\
 ![Repo-1](media/Repo-1.png)
 2. Open Github Desktop. Create new repo and give it a proper name. (Note down the path to your repo)
-![Repo-1](media/Repo-1.png)
-![Repo-1](media/Repo-1.png)
+![Repo-2](media/Repo-2.png)
+![Repo-3](media/Repo-3.png)
 3. Extract everything from the `.zip` file downloaded in #1. Copy everything into the path of your repo.
 4. Open VSCode. Open folder, select your repo created in #2.
 5. Create a file called `appsettings.json`, copy paste below code into this json file. Then fill out the code using the application id, tenant id and secrete from previous section.
