@@ -14,6 +14,7 @@ Guide for B2C Deep Learning Campus (Day 2) lab guide.
 2. Navigate to [Azure Portal](https://portal.azure.com) -> Log into your B2C tenant -> Azure AD B2C -> App Registrations -> New Registration
 3. Give it a proper name. Select "Account in this organizational directory only". Create.
 <img src=".\media\App-1.png" width=40% height=40%>
+![App-1](.\media\App-1.png)
 4. Once app is created, note down the **Application Id** and **Tenant Id**.
 <img src=".\media\App-2.png" width=50% height=50%>
 5. Head to "Certificate & Secret", create a new secret. Make sure you note down the secret **VALUE** (Not ID), **secret will disappear if you go to other blades.**
@@ -22,8 +23,8 @@ Guide for B2C Deep Learning Campus (Day 2) lab guide.
 <img src=".\media\App-4.png" width=70% height=70%>
 
 ## Lab
-1. Download this repo as `.zip`
-<img src=".\media\Repo-1.png" width=30% height=30%>\
+1. Download this repo as `.zip`.
+<img src=".\media\Repo-1.png" width=30% height=30%>
 2. Open Github Desktop. Create new repo and give it a proper name. (Note down the path to your repo)
 <img src=".\media\Repo-2.png" width=40% height=40%>
 <img src=".\media\Repo-3.png" width=40% height=40%>
@@ -40,6 +41,7 @@ Guide for B2C Deep Learning Campus (Day 2) lab guide.
 6. Follow [Create Custom Policy Tutorial](https://learn.microsoft.com/en-us/azure/active-directory-b2c/tutorial-create-user-flows?pivots=b2c-custom-policy) to complete setting everything up for your tenant. (**Note that this repo is only for local accounts, do not follow FaceBook setup. You do not have to upload policies as of now.**)
 7. Once finished changing the code, launch terminal from VSCode.
 <img src=".\media\VSCode-1.png" width=60% height=60%>
+![App-1](.\media\VSCode-1.png)
 8. Make sure you are at the right path. Then run `.\deploy.ps1` to help you upload the custom policy. (**Successful upload looks like below**)
 <img src=".\media\VSCode-2.png" width=50% height=50%>
 9. Once succesful, go to Github Desktop, note that you are still on the `main` branch and there are tons of changes, similar to below. **Commit the changes**.
@@ -54,7 +56,7 @@ Guide for B2C Deep Learning Campus (Day 2) lab guide.
 15. Commit to `totp-branch`. This is indication of completing the development of the feature.
 15. At this stage, you have two branches `main` and `totp-branch`. If you would like to upload the basic local account custom policies, switch to `main` and run `.\deploy.ps1`. If you would like to upload local account with TOTP MFA, switch to `totp-branch` and run `.\deploy.ps1`.
 <img src=".\media\github-4.png" width=70% height=70%>
-<img src=".\media\github-5.png" width=70% height=70%>
+<img src=".\media\github-5.png" width=40% height=70%>
 
 ## Misc.
 1. `deploy.json` defines where your policy files are stored and in what order files need to be uploaded by `deploy.ps1`
