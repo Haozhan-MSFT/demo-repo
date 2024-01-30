@@ -43,18 +43,18 @@ Guide for B2C Deep Learning Campus (Day 2) lab guide.
 8. Make sure you are at the right path. Then run `.\deploy.ps1` to help you upload the custom policy. (**Successful upload looks like below**)
 <img src=".\media\VSCode-2.png" width=40% height=40%>
 9. Once succesful, go to Github Desktop, note that you are still on the `main` branch and there are tons of changes, similar to below. **Commit the changes**.
-<img src=".\media\Github-1.png" width=80% height=80%>
+<img src=".\media\github-1.png" width=80% height=80%>
 10. Now you have everything ready as the fundation. Let's add TOTP feature to this.
 11. Create a branch, name it properly. For example `totp-branch`
-<img src=".\media\Github-2.png" width=35% height=35%>
-<img src=".\media\Github-3.png" width=35% height=35%>
+<img src=".\media\github-2.png" width=35% height=35%>
+<img src=".\media\github-3.png" width=35% height=35%>
 12. Once created, pay extra attention on the branch you are currently on. **If you are still on `main` branch, change it to the `totp-branch`**
 13. Follow [B2C MFA with TOTP](https://github.com/azure-ad-b2c/samples/tree/master/policies/totp) to add TOTP support for your loacl account cutom policy.
 14. Once everything is configured, run `.\deploy.ps1` to help you upload the custom policy. Test and see if the configured policy works as expected.
 15. Commit to `totp-branch`. This is indication of completing the development of the feature.
 15. At this stage, you have two branches `main` and `totp-branch`. If you would like to upload the basic local account custom policies, switch to `main` and run `.\deploy.ps1`. If you would like to upload local account with TOTP MFA, switch to `totp-branch` and run `.\deploy.ps1`.
-<img src=".\media\Github-4.png" width=40% height=40%>
-<img src=".\media\Github-5.png" width=40% height=40%>
+<img src=".\media\github-4.png" width=40% height=40%>
+<img src=".\media\github-5.png" width=40% height=40%>
 
 ## Misc.
 1. `deploy.json` defines where your policy files are stored and in what order files need to be uploaded by `deploy.ps1`
