@@ -22,7 +22,7 @@ Guide for B2C Deep Learning Campus (Day 2) lab guide.
 ![App-1](media/App-4.png)
 
 ## Lab
-1. Download this repo as `.zip`.
+1. Download this repo as `.zip`.\
 ![Repo-1](media/Repo-1.png)
 2. Open Github Desktop. Create new repo and give it a proper name. (Note down the path to your repo)
 ![Repo-1](media/Repo-1.png)
