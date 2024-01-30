@@ -28,7 +28,8 @@ Guide for B2C Deep Learning Campus (Day 2) lab guide.
 ![Repo-2](media/Repo-2.png)
 ![Repo-3](media/Repo-3.png)
 3. Extract everything from the `.zip` file downloaded in #1. Copy everything into the path of your repo.
-4. Open VSCode. Open folder, select your repo created in #2.
+4. Open VSCode. Open folder, select your repo created in #2. Once opened, the structure should look like something below. 
+![Repo-4](media/Repo-4.png)
 5. Create a file called `appsettings.json`, copy paste below code into this json file. Then fill out the code using the application id, tenant id and secrete from previous section.
 ```json
 {
@@ -37,24 +38,26 @@ Guide for B2C Deep Learning Campus (Day 2) lab guide.
     "tenant_id": "<your tennat id>"
 }
 ```
+6. Once all the files are added, go to Github Desktop. Note there are tons of changes, add commit `Add files.`
+![commit-1](media/commit-1.png)
 6. Follow [Create Custom Policy Tutorial](https://learn.microsoft.com/en-us/azure/active-directory-b2c/tutorial-create-user-flows?pivots=b2c-custom-policy) to complete setting everything up for your tenant. (**Note that this repo is only for local accounts, do not follow FaceBook setup. You do not have to upload policies as of now.**)
 7. Once finished changing the code, launch terminal from VSCode.
 ![VSCode-1](media/VSCode-1.png)
 8. Make sure you are at the right path. Then run `.\deploy.ps1` to help you upload the custom policy. (**Successful upload looks like below**)
 ![VSCode-2](media/VSCode-2.png)
-9. Once succesful, go to Github Desktop, note that you are still on the `main` branch and there are tons of changes, similar to below. **Commit the changes**.
-![github-1](media/github-1.png)
+9. Once succesful, go to Github Desktop, note that you are still on the `main` branch and there are changes made to the files, similar to below. **Commit the changes**.
+![commit-2](media/commit-2.png)
 10. Now you have everything ready as the fundation. Let's add TOTP feature to this.
 11. Create a branch, name it properly. For example `totp-branch`
-![github-2](media/github-2.png)
-![github-3](media/github-3.png)
+![branch-1](media/branch-1.png)
+![branch-2](media/branch-2.png)
 12. Once created, pay extra attention on the branch you are currently on. **If you are still on `main` branch, change it to the `totp-branch`**
 13. Follow [B2C MFA with TOTP](https://github.com/azure-ad-b2c/samples/tree/master/policies/totp) to add TOTP support for your loacl account cutom policy.
-14. Once everything is configured, run `.\deploy.ps1` to help you upload the custom policy. Test and see if the configured policy works as expected.
-15. Commit to `totp-branch`. This is indication of completing the development of the feature.
+14. Once everything is configured, run `.\deploy.ps1` to help you upload the custom policy. **Test and make sure the configured policy works as expected.**
+15. **Commit** to `totp-branch`. This is indication of completing the development of the feature.
 15. At this stage, you have two branches `main` and `totp-branch`. If you would like to upload the basic local account custom policies, switch to `main` and run `.\deploy.ps1`. If you would like to upload local account with TOTP MFA, switch to `totp-branch` and run `.\deploy.ps1`.
-![github-4](media/github-4.png)
-![github-5](media/github-5.png)
+![branch-3](media/branch-3.png)
+![branch-4](media/branch-4.png)
 
 ## Misc.
 1. `deploy.json` defines where your policy files are stored and in what order files need to be uploaded by `deploy.ps1`
