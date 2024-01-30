@@ -22,8 +22,8 @@ Guide for B2C Deep Learning Campus (Day 2) lab guide.
 <img src=".\media\App-4.png" width=70% height=70%>
 
 ## Lab
-1. Download this repo as `.zip`.
-<img src=".\media\Repo-1.png" width=30% height=30%>
+1. Download this repo as `.zip`
+<img src=".\media\Repo-1.png" width=30% height=30%>\
 2. Open Github Desktop. Create new repo and give it a proper name. (Note down the path to your repo)
 <img src=".\media\Repo-2.png" width=40% height=40%>
 <img src=".\media\Repo-3.png" width=40% height=40%>
